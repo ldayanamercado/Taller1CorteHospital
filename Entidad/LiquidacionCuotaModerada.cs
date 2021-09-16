@@ -31,6 +31,8 @@ namespace Entidad
         public double valorServicio { get; set; }
         public double cuotaModeradora { get; set; }
 
+        public abstract double CuotaModeradora();
+
         public override string ToString()
         {
             return $"Numero de liquidacion:{numeroLiquidacion} \nNumero de identificacion: {identificacion}" +

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidad
 {
-    class LiquidacionContributiva : LiquidacionCuotaModeradora
+    public class LiquidacionContributiva : LiquidacionCuotaModeradora
     {
         double salarioMinimo = 877803;
 
@@ -47,7 +47,10 @@ namespace Entidad
                 return cuotaModeradora = 1500000;
 
             }
-            return 0;
+            else
+            {
+                return TCuotaModeradora();
+            }
         }
 
        

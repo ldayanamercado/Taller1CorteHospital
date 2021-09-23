@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Entidad
 {
-    class LiquidacionSubcidiada : LiquidacionCuotaModeradora
+    public class LiquidacionSubcidiada : LiquidacionCuotaModeradora
     {
+
         public override double TCuotaModeradora()
         {
                 return cuotaModeradora = valorServicio * 0.5;

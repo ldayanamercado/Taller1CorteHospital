@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Entidad
+namespace Repositorio
 {
     public class Class1
     {

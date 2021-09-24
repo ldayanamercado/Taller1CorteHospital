@@ -10,20 +10,24 @@ namespace Entidad
     {
        
 
-        public string numeroLiquidacion { get; set; }
-        public string identificacion { get; set; }
-        public string tipoAfiliciacion { get; set; }
-        public double salarioDevengado { get; set; }
-        public double valorServicio { get; set; }
-        public double cuotaModeradora { get; set; }
+        public string NumeroLiquidacion { get; set; }
+        public string Identificacion { get; set; }
+        public string TipoAfiliciacion { get; set; }
+        public double SalarioDevengado { get; set; }
+        public double ValorServicio { get; set; }
+        public double CuotaModeradora { get; set; }
+        public double  FechaLiquidacion { get; set; }
 
-        public abstract double TCuotaModeradora();
+
+
+
+    public abstract double TCuotaModeradora();
 
         public override string ToString()
         {
-            return $"Numero de liquidacion:{numeroLiquidacion} \nNumero de identificacion: {identificacion}" +
-                $"tipo de afiliciacion: {tipoAfiliciacion} \nSalario de vengado: {salarioDevengado}" +
-                $" valor del servicio: {valorServicio} \n valor de la cuota moderadora: {cuotaModeradora}";
+            return $"Numero de liquidacion:{NumeroLiquidacion} \nNumero de identificacion: {Identificacion}" +
+                $"tipo de afiliciacion: {TipoAfiliciacion} \nSalario de vengado: {SalarioDevengado}" +
+                $" valor del servicio: {ValorServicio} \n valor de la cuota moderadora: {CuotaModeradora} \n Feccha de liquidacion : {FechaLiquidacion}";
         }
 
     }

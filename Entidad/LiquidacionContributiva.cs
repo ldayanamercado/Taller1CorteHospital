@@ -15,17 +15,17 @@ namespace Entidad
         {
             
 
-            if (salarioDevengado < salarioMinimo*2)
+            if (SalarioDevengado < salarioMinimo*2)
             {
-                return cuotaModeradora = valorServicio * 0.15;
+                return CuotaModeradora = ValorServicio * 0.15;
             }
-            else if ((salarioDevengado>=salarioMinimo*2)&&(salarioDevengado<=salarioMinimo*5))
+            else if ((SalarioDevengado>=salarioMinimo*2)&&(SalarioDevengado<=salarioMinimo*5))
             {
-                return cuotaModeradora = valorServicio * 0.20;
+                return CuotaModeradora = ValorServicio * 0.20;
 
-            }else if (salarioDevengado > salarioMinimo * 5)
+            }else if (SalarioDevengado > salarioMinimo * 5)
             {
-                return cuotaModeradora = valorServicio * 0.25;
+                return CuotaModeradora = ValorServicio * 0.25;
 
             } return 0;
 
@@ -34,17 +34,17 @@ namespace Entidad
 
         public double CalcularCuotaModeradora()
         {
-            if (TCuotaModeradora() >= 250000 && salarioDevengado < salarioMinimo * 2)
+            if (TCuotaModeradora() >= 250000 && SalarioDevengado < salarioMinimo * 2)
             {
-                return cuotaModeradora = 250000;
+                return CuotaModeradora = 250000;
             } else if (TCuotaModeradora() >= 900000 &
-                (salarioDevengado >= salarioMinimo * 2) && (salarioDevengado <= salarioMinimo * 5))
+                (SalarioDevengado >= salarioMinimo * 2) && (SalarioDevengado <= salarioMinimo * 5))
             {
-                return cuotaModeradora = 900000;
+                return CuotaModeradora = 900000;
 
-            }else if (TCuotaModeradora()>=1500000 && salarioDevengado > salarioMinimo * 5)
+            }else if (TCuotaModeradora()>=1500000 && SalarioDevengado > salarioMinimo * 5)
             {
-                return cuotaModeradora = 1500000;
+                return CuotaModeradora = 1500000;
 
             }
             else

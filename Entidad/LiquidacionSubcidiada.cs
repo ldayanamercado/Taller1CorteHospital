@@ -11,7 +11,7 @@ namespace Entidad
 
         public override double TCuotaModeradora()
         {
-                return cuotaModeradora = valorServicio * 0.5;
+                return CuotaModeradora = ValorServicio * 0.5;
             
         }
 
@@ -19,7 +19,7 @@ namespace Entidad
         {
             if (TCuotaModeradora() >= 20000 )
             {
-                return cuotaModeradora = 20000;
+                return CuotaModeradora = 20000;
             }else
             {
                 return TCuotaModeradora();
